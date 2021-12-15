@@ -5,6 +5,10 @@ function LoginScreen({ navigation }) {
     return (
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
             <Text>LoginScreen </Text>
+            <Button
+                onPress={() => navigation.navigate('Main')}
+                title="Press Me"
+            ></Button>
         </View>
     );
 }
