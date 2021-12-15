@@ -114,7 +114,6 @@
 				68C06BF281F7CED0C7AEF099 /* Pods-NVP-NVPTests.debug.xcconfig */,
 				6F1AAED4C2A77D79EC5242EE /* Pods-NVP-NVPTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -485,6 +484,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MVDH6F6A68;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = NVP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -511,6 +511,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MVDH6F6A68;
 				INFOPLIST_FILE = NVP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
