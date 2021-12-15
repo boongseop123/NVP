@@ -13,6 +13,7 @@ function Login(props) {
             <Button
                 onPress={function () {
                     props.onPressLogin(simplePw);
+                    setSimplePw('');
                 }}
                 title="LOGIN"
             ></Button>
