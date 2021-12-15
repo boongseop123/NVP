@@ -1,0 +1,2 @@
+export const LOGIN_SIMPLE_PW = "LOGIN_SIMPLE_PW";
+
