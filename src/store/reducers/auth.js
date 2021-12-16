@@ -2,6 +2,7 @@ import * as types from '../actions/actionTypes'
 
 
 const initialState = {
+    uniqueID: '',
     simplePw: '',
 };
 export default function authReducer(state = initialState, action) {
@@ -9,7 +10,7 @@ export default function authReducer(state = initialState, action) {
         case types.LOGIN_SIMPLE_PW:
             return {
                 ...state,
-                simplePw: action.payload
+                uniqueID: action.uniqueID
             }
     }
     return state;
