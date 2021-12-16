@@ -23,13 +23,13 @@ static void InitializeFlipper(UIApplication *application) {
 }
 #endif
 #import "RNSplashScreen.h"
-
+@import Firebase;
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  [RNSplashScreen show];
-  return YES;
+ 
+  [FIRApp configure];
 #ifdef FB_SONARKIT_ENABLED
   InitializeFlipper(application);
 #endif

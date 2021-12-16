@@ -14,7 +14,8 @@
 		53821721D48A13459EAAD9A0 /* libPods-NVP-NVPTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC00C21BD8FAB4C7C4F60AC /* libPods-NVP-NVPTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		B0BFD4A83833CC88C4FCFEB7 /* libPods-NVP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1957B652989999A6BE901FC /* libPods-NVP.a */; };
-		E7A8472D276B267900D79DB4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7A8472C276B267900D79DB4 /* GoogleService-Info.plist */; };
+		E756DD32276B5B55000FBDCC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E756DD31276B5B54000FBDCC /* GoogleService-Info.plist */; };
+		E756DD35276B5E46000FBDCC /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E756DD34276B5E46000FBDCC /* FirebaseAnalytics */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +45,7 @@
 		A1957B652989999A6BE901FC /* libPods-NVP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NVP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAC00C21BD8FAB4C7C4F60AC /* libPods-NVP-NVPTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NVP-NVPTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0E657E8728315A676405904 /* Pods-NVP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NVP.release.xcconfig"; path = "Target Support Files/Pods-NVP/Pods-NVP.release.xcconfig"; sourceTree = "<group>"; };
-		E7A8472C276B267900D79DB4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E756DD31276B5B54000FBDCC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -61,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E756DD35276B5E46000FBDCC /* FirebaseAnalytics in Frameworks */,
 				B0BFD4A83833CC88C4FCFEB7 /* libPods-NVP.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,8 +95,8 @@
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
-				E7A8472C276B267900D79DB4 /* GoogleService-Info.plist */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				E756DD31276B5B54000FBDCC /* GoogleService-Info.plist */,
 			);
 			name = NVP;
 			sourceTree = "<group>";
@@ -193,6 +195,9 @@
 			dependencies = (
 			);
 			name = NVP;
+			packageProductDependencies = (
+				E756DD34276B5E46000FBDCC /* FirebaseAnalytics */,
+			);
 			productName = NVP;
 			productReference = 13B07F961A680F5B00A75B9A /* NVP.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +228,9 @@
 				Base,
 			);
 			mainGroup = 83CBB9F61A601CBA00E9B192;
+			packageReferences = (
+				E756DD33276B5E46000FBDCC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -247,7 +255,7 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				E7A8472D276B267900D79DB4 /* GoogleService-Info.plist in Resources */,
+				E756DD32276B5B55000FBDCC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -689,6 +697,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E756DD33276B5E46000FBDCC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E756DD34276B5E46000FBDCC /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E756DD33276B5E46000FBDCC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
 }
