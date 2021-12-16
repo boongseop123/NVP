@@ -22,11 +22,14 @@ static void InitializeFlipper(UIApplication *application) {
   [client start];
 }
 #endif
+#import "RNSplashScreen.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  [RNSplashScreen show];
+  return YES;
 #ifdef FB_SONARKIT_ENABLED
   InitializeFlipper(application);
 #endif
@@ -48,6 +51,7 @@ static void InitializeFlipper(UIApplication *application) {
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
   return YES;
+
 }
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
