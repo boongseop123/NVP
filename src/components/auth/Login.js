@@ -7,7 +7,7 @@ function Login(props) {
     let [simplePW, setSimplePW] = useState('');
     const uniqueID = deviceInfoModule.getUniqueId();
 
-    console.log(props);
+    console.log(uniqueID);
     return (
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
             <Text>LoginScreen </Text>
