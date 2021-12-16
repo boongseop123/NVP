@@ -8,8 +8,8 @@ function mapReduxStateToReactProps(state) {
 
 function mapReduxDispatchToReactProps(dispatch) {
     return {
-        onPressLogin: function (simplePw) {
-            dispatch(loginSimplwPw(simplePw));
+        onPressLogin: function (uniqueID, simplePW) {
+            dispatch(loginSimplwPw(uniqueID, simplePW));
         }
     }
 }
